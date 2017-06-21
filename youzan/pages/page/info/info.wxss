@@ -1,0 +1,75 @@
+/* pages/page/info/info.wxss */
+.container{
+    font-size: 0.8rem;
+    background: #f8f8f8;
+}
+.head{
+    padding: 2% 2%;
+    border-bottom: 1rpx solid #dedede;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    height: 4rem;
+    line-height: 4rem;
+    align-items: center;
+}
+.head-title{
+    height: 4rem;
+    line-height: 4rem;
+}
+.head_img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.center{
+    margin-top: 1rem;
+    border-top: 1rpx solid #dedede;
+    border-bottom: 1rpx solid #dedede;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+.center_box{
+    width: 100%;
+}
+.center_list{
+    display: flex;
+    border-bottom: 1rpx solid #dedede;
+    justify-content: space-between;
+    padding-right: 2%;
+    height: 3rem;
+    line-height: 3rem;
+}
+.center_list:last-child{
+    border: none;
+}
+.center_info{
+    color: #a6a6a6;
+}
+.connect{
+    padding: 0 2%;
+    background: #fff;
+    border-top: 1rpx solid #dedede;
+    border-bottom: 1rpx solid #dedede;
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.link{
+    color: #a6a6a6;
+}
+.help{
+    margin-top: 1rem;
+    padding: 0 2%;
+    background: #fff;
+    border-top: 1rpx solid #dedede;
+    border-bottom: 1rpx solid #dedede;
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}

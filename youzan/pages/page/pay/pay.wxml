@@ -1,0 +1,84 @@
+<!--pages/page/pay/pay.wxml-->
+<view class="container">
+<!--收货地址-->
+<form bindsubmit="formSubmit">
+    <view class="addAddress addressInfo">
+        <view class="addressInfo_title">
+            <view class="addressInfoTitle_info">
+                <image src="../../img/dingwei.png" class="address_img"></image>
+                <text class="addressInfo_people">收货人：{{addressInfo_name}}</text>
+            </view>
+            <text class="addressInfoTitle_msg">{{address_telphone}}</text>
+        </view>
+        <view class="addressInfo_msg">
+            <text class="addressInfoMsg_title">收货地址：{{addressInfoMsg_msg}}</text>
+        </view>
+    </view>
+    <view class="addressBtm">
+        <image src="../../img/addressBtm.png" class="addressImg"></image>
+    </view>
+<!--商品信息-->
+    <view class="orderInfo">
+        <view class="orderInfo_logo">
+            <image src="{{logo_src}}" class="orderInfoLogo_img"></image>
+            <text class="orderInfo_name">{{orderInfo_name}}</text>
+        </view>
+        <view class="orderInfo_msg">
+            <image src="{{orderInfo_view}}" class="orderInfoMsg_img"></image>
+            <text class="orderInfoMsg_title">{{orderInfoMsg_title}}</text>
+            <view class="orderInfoMsg_cash">
+                <text class="orderCash_money">￥{{orderCash_money}}</text>
+                <text class="orderCash_num">×{{orderCash_num}}</text>
+            </view>
+        </view>
+    </view>
+<!--配送方式-->
+    <view class="orderDelivery">
+        <text class="orderDelivery_title">配送方式</text>
+        <view class="orderDelivery_msg">
+            <text class="orderDeliveryMsg_cash">￥{{orderDeliveryMsg_cash}}</text>
+            <text class="orderDeliveryMsg_msg">快速发货</text>
+        </view>
+    </view>
+<!--买家留言-->
+    <view class="orderMessage">
+        <text class="orderMessage_title">买家留言：</text>
+        <input name="input" class="orderMessage_msg" placeholder="点击给卖家留言" />
+    </view>
+<!--合计-->
+    <view class="orderTotal">
+        <text class="orderTotal_title">合计</text>
+        <text class="orderTotal_msg">￥{{orderTotal_msg}}</text>
+    </view>
+<!--短信通知-->
+    <view class="orderSpace"></view>
+    <view class="orderSend">
+        <text class="orderSend_title">短信通知收件人</text>
+        <view class="orderSend_msg">
+            <switch type="switch" name="switch" />
+        </view>
+    </view>
+    <view class="orderSpace"></view>
+<!--商品金额-->
+    <view class="orderCash">
+        <view class="orderCash_cash">
+            <text class="orderCashCash_title">商品金额</text>
+            <text class="orderCashCash_msg">￥{{orderCashCash_msg}}</text>
+        </view>
+        <view class="orderCash_port">
+            <text class="orderCashPort_title">运费</text>
+            <text class="orderCashPort_msg">+￥{{orderCashPort_msg}}</text>
+        </view>
+    </view>
+<!--技术支持-->
+    <view class="orderSupport">
+        <view class="orderSupport_safe">本订单享受<image src="{{orderSupport_img}}" class="orderSupportSafe_img"></image>保险保障</view>
+    </view>
+<!--提交按钮-->
+<view class="buySubmit">
+    <text class="submitTotal">合计：</text>
+    <text class="submitTotal_cash">￥{{submitTotal_cash}}</text>
+    <view class="submitTotal_btn" bindtap="toPay">去支付</view>
+</view>
+</form>
+</view>

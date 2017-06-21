@@ -1,0 +1,86 @@
+<!--pages/page/finish/finish.wxml-->
+<view class="container">
+<!--订单状态-->
+    <view class="orderStatus">
+        <image src="{{orderStatus_src}}" class="status_img"></image>
+        <text>{{orderStatus}}</text>
+    </view>
+<!--收货信息-->
+    <view class="addAddress">
+        <view class="addAddress_title">
+            <view class="address_title">
+                <image src="../../img/dingwei.png" class="address_img"></image>
+                <text class="addressTitle_people">收货人：{{address_name}}</text>
+            </view>
+            <text class="address_msg">{{address_tel}}</text>
+        </view>
+        <view class="addAddress_msg">
+            <text class="addressMsg_title">收货地址：{{address_add}}</text>
+        </view>
+    </view>
+     <view class="addressBtm">
+        <image src="../../img/addressBtm.png" class="addressImg"></image>
+    </view>
+<!--商品信息-->
+    <view class="orderInfo">
+        <view class="orderInfo_logo">
+            <image src="{{logo_src}}" class="orderInfoLogo_img"></image>
+            <text class="orderInfo_name">{{orderInfo_name}}</text>
+        </view>
+        <view class="orderInfo_msg">
+            <image src="{{orderInfo_view}}" class="orderInfoMsg_img"></image>
+            <text class="orderInfoMsg_title">{{orderInfoMsg_title}}</text>
+            <view class="orderInfoMsg_cash">
+                <text class="orderCash_money">￥{{orderCash_money}}</text>
+                <text class="orderCash_num">×{{orderCash_num}}</text>
+            </view>
+        </view>
+    </view>
+<!--配送方式-->
+    <view class="orderDelivery">
+        <text class="orderDelivery_title">配送方式</text>
+        <view class="orderDelivery_msg">
+            <text class="orderDeliveryMsg_cash">￥{{orderDeliveryMsg_cash}}</text>
+            <text class="orderDeliveryMsg_msg">快速发货</text>
+        </view>
+    </view>
+<!--买家留言-->
+    <view class="orderMessage">
+        <text class="orderMessage_title">买家留言：</text>
+        <text class="orderMessage_msg">{{orderMessage_msg}}</text>
+    </view>
+    <view class="orderSpace"></view>
+<!--商品金额-->
+    <view class="orderCash">
+        <view class="orderCash_cash">
+            <text class="orderCashCash_title">商品金额</text>
+            <text class="orderCashCash_msg">￥{{orderCashCash_msg}}</text>
+        </view>
+        <view class="orderCash_port">
+            <text class="orderCashPort_title">运费</text>
+            <text class="orderCashPort_msg">+￥{{orderCashPort_msg}}</text>
+        </view>
+    </view>
+<!--合计-->
+    <view class="orderTotal">
+        <text class="orderTotal_title">合计</text>
+        <text class="orderTotal_msg">￥{{orderTotal_msg}}</text>
+    </view>
+    <view class="orderSpace"></view>
+<!--订单编号-->
+    <view class="orderNumber">
+        <view class="orderNumber_box">
+            <view class="orderNumber_list">
+                <text class="orderNumber_title">订单编号：{{orderNumber}}</text>
+            </view>
+            <view class="orderNumber_list">
+                <text class="orderNumber_title">创建时间：{{orderTime}}</text>
+            </view>
+        </view>
+        <view class="orderNumber_que">对此订单有疑问？</view>
+    </view>
+<!--技术支持-->
+    <view class="orderSupport">
+        <view class="orderSupport_safe">本订单享受<image src="{{orderSupport_img}}" class="orderSupportSafe_img"></image>保险保障</view>
+    </view>
+</view>

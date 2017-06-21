@@ -1,0 +1,86 @@
+/* pages/page/myOrder/myOrder.wxss */
+.container{
+    background: #f8f8f8;
+}
+.swiper-tab{
+    font-size: 0.8rem;
+    text-align: center;
+    background: #fff;
+    display: flex;
+}
+.swiper-tab-list{
+     width: 25%;
+     padding: 25rpx 0;
+     border-bottom: 1rpx solid #dedede;
+}
+.on{
+    color: #fb4a54;
+    border-bottom: 2rpx solid #fb4a54;
+}
+.myOrder_list{
+    background: #fff;
+    margin-top: 30rpx;
+    border-bottom: 1rpx solid #dedede;
+    border-top: 1rpx solid #dedede;
+}
+.address{
+    padding: 5% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+.address_title{
+    display: flex;
+    justify-content: space-between;
+}
+.myOrder_status{
+    color: #e15369;
+}
+.address_info{
+    font-size: 0.7rem;
+    color: #898989;
+    padding-top: 10rpx;
+}
+.orderInfo{
+    display: flex;
+    flex-direction: column;
+}
+.orderInfo_msg{
+    background: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+.orderInfoMsg_img{
+    height: 4rem;
+    width: 8rem;
+}
+.orderInfoMsg_title{
+    font-size: 0.8rem;
+    padding: 0 10rpx;
+    color: #5e5e5e;
+}
+.orderInfoMsg_cash{
+    display: flex;
+    flex-direction: column;
+}
+.orderCash_money{
+    padding: 0;
+    font-size: 0.8rem
+}
+.orderCash_num{
+    font-size: 0.8rem;
+    padding-top: 20rpx;
+    text-align: right;
+    color: #626262;
+}
+.orderTotal{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    padding: 2% 5% 2% 0;
+    align-items: center;
+}
+.orderTotal_cash{
+    color: red;
+}

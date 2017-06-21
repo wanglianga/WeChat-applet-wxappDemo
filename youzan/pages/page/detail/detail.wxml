@@ -1,0 +1,93 @@
+<!--pages/page/detail/detail.wxml-->
+<view class="container">
+<!--商品详情页面-->
+<view class="view">
+<!--轮播-->
+ <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="view_swiper">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+ </swiper>
+ <!--轮播-->
+ <!--商品名称-->
+ <view class="view_title">{{view_title}}</view>
+ <!--商品名称-->
+ <!--商品价格-->
+ <view class="view_price">{{view_price}}</view>
+ <!--商品价格-->
+ <!--运费销量-->
+ <view class="view_port">
+    <text class="port_cash">运费:￥6.00~38.00</text>
+    <text class="port_rest">剩余：{{port_rest}}</text>
+    <text class="port_number">销量：{{port_number}}</text>
+ </view>
+ <!--运费销量--> 
+ <!--详情展示-->
+ <view class="view_show">
+    <view class="show_box">
+        <view class="show_list" wx:for="{{array}}">
+         <image src="{{item.src}}" class="show_img"></image>
+        </view>
+    </view>
+ </view> 
+ <!--详情展示--> 
+ <!--立刻购买按钮-->
+ <view class="buyStart">
+  <view class="return_index" bindtap="backto_index">
+    <image src="../../img/shouye.png" class="return_img"></image>
+    <text class="return_text">首页</text>
+  </view>
+  <button type="warn" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="buyMsg" hover-class="other-button-hover" class="tobuy_btn">立即购买</button>
+ </view>
+ <!--立刻购买按钮-->
+</view>
+<view class="chooseShade {{shade_class}}" style="height:{{winHeight}}px"></view>
+<!--隐藏页面-->
+  <view class="buyChoose {{choose_class}}">
+      <!--购买商品名称-->
+      <view class="choose_title">
+        <view class="choose_imgBox">
+          <image src="{{choose_src}}" class="choose_img"></image>
+        </view>
+        <view class="choose_info">
+          <text class="choose_name">{{choose_name}}</text>
+          <text class="choose_price">{{choose_price}}</text>
+        </view>
+        <view class="choose_close" bindtap="closeChoose">
+          <icon type="cancel" size="20" color="#a4a4a4"></icon>
+        </view>
+      </view>
+      <!--购买商品名称-->
+      <!--购买商品种类-->
+      <view class="choose_type">
+        <text class="cType_title">颜色：</text>
+        <view class="cType_box">
+            <view class="cType_list {{item.selected ? 'cType_listNew' : ''}}" id="{{item.id}}" wx:for="{{arrayChoose}}" bindtap="chooseType">{{item.info}}</view>
+        </view>
+      </view>
+      <!--购买商品种类-->
+      <!--购买商品数量-->
+      <view class="choose_number">
+        <view class="cNumber_box">
+            <text class="cNumber_title">购买数量：</text>
+            <text class="cNumber_rest">剩余{{cNumber_rest}}件</text>
+        </view>
+        <view class="cNumber_add">
+            <view class="buyNum_del {{buyNum_info!==1 ? 'buyNum_delNew' : ''}}" bindtap="del">-</view>
+            <view class="buyNum_info">{{buyNum_info}}</view>
+            <view class="buyNum_add" bindtap="add">+</view>
+        </view>
+      </view>
+      <!--购买商品数量-->
+      <!--下一步按钮-->
+      <view class="buyNext {{next_class}}">
+        <button type="warn" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="buyNext" hover-class="other-button-hover" class="tobuy_next">下一步</button>
+      </view>
+      <!--下一步按钮-->
+  </view>
+</view>

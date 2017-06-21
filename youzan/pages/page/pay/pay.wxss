@@ -1,0 +1,216 @@
+/* pages/page/pay/pay.wxss */
+.addAddress{
+     padding: 5% 5% 3% 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    flex-direction: column;
+}
+.addressBtm{
+    border-bottom: 1rpx solid #e2e2e2;
+    width: 100%;
+    height: 1.2rem;
+}
+.address_img{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx
+}
+.addressImg{
+    width: 100%;
+    height: 100%;
+}
+.addressInfo_msg{
+   padding-left: 40rpx;
+}
+.orderInfo{
+    display: flex;
+    flex-direction: column;
+}
+.orderInfo_logo{
+    display: flex;
+    padding: 5%;
+    background: #fff;
+    align-items: center;
+}
+.orderInfo_name{
+    font-size: 0.8rem;
+    padding-left: 10rpx;
+}
+.orderInfoLogo_img{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+.orderInfo_msg{
+    background: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+.orderInfoMsg_img{
+    height: 4rem;
+    width: 8rem;
+}
+.orderInfoMsg_title{
+    font-size: 0.8rem;
+    padding: 0 10rpx;
+    color: #5e5e5e;
+}
+.orderInfoMsg_cash{
+    display: flex;
+    flex-direction: column;
+}
+.orderCash_money{
+    padding: 0;
+    font-size: 0.8rem
+}
+.orderCash_num{
+    font-size: 0.8rem;
+    padding-top: 20rpx;
+    text-align: right;
+    color: #626262;
+}
+.orderDelivery{
+    display: flex;
+    justify-content: space-between;
+    padding:5% 0 5% 0;
+    margin-left: 5%;
+    border-bottom: 1rpx solid #e2e2e2;
+    background: #fff;
+}
+.orderDelivery_title{
+    font-size: 0.8rem;
+}
+.orderDelivery_msg{
+    padding-right: 5%;
+    color: #5e5e5e;
+     display: flex;
+    flex-direction: column;
+}
+.orderDeliveryMsg_cash{
+    font-size: 0.9rem;
+    text-align: right;
+}
+.orderDeliveryMsg_msg{
+    font-size: 0.8rem;
+    text-align: right;
+}
+.orderMessage{
+    display: flex;
+    margin-left: 5%;
+    padding: 5% 0;
+    font-size: 0.8rem;
+    border-bottom: 1rpx solid #e2e2e2;
+    background: #fff;
+    align-items: center;
+}
+.orderMessage_result{
+    color: #8b8b8b;
+    padding-left: 20rpx;
+}
+.orderMessage_msg{
+    font-size: 0.7rem;
+    vertical-align: middle;
+    padding-left: 20rpx;
+}
+.orderTotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    font-size: 0.8rem;
+    border-bottom: 1rpx solid #e2e2e2;
+    background: #fff;
+    align-items: center;
+}
+.orderTotal_msg{
+    color: red;
+}
+.orderSend {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    font-size: 0.8rem;
+    border-top: 1rpx solid #e2e2e2;
+    border-bottom: 1rpx solid #e2e2e2;
+    background: #fff;
+    align-items: center;
+}
+.orderCash{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+    font-size: 0.8rem;
+    border-top: 1rpx solid #e2e2e2;
+    border-bottom: 1rpx solid #e2e2e2;
+    background: #fff;
+}
+.orderCash_cash,.orderCash_port{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.orderCash_port{
+    padding-top: 20rpx;
+}
+.orderSupport{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10% 0;
+    background: #f8f8f8;
+}
+.orderSupport_safe{
+    font-size: 0.6rem;
+    color: #a1a1a1;
+     padding-bottom: 90rpx;
+}
+.orderSupportSafe_img{
+    width: 2.6rem;
+    height: 0.8rem;
+    padding: 0 5rpx;
+}
+.orderSpace{
+    background: #f8f8f8;
+    height: 40rpx;
+    width: 100%;
+}
+.addressInfo{
+    display: flex;
+    flex-direction: column;
+}
+.addressInfo_title,.addressInfoTitle_info{
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+.addressInfo_msg{
+    display: flex;
+    font-size: 0.7rem;
+    color: #8b8b8b;
+    padding-top: 5rpx;
+}
+.buySubmit{
+    position: fixed;
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 91.5rpx;
+    line-height: 91.5rpx;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1rpx solid #e2e2e2;
+    background: #fff;
+}
+.submitTotal_cash{
+    color: #e64340;
+    padding-right: 5%;
+}
+.submitTotal_btn{
+    background: #fd5b59;
+    padding: 0 7%;
+    color: #fff;
+}

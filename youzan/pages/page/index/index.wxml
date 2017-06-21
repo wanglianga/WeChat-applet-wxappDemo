@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+<!--首页内容展示部分-->
+ <view class="content">
+  <view class="content_box">
+    <view class="content_list" wx:for="{{array}}" bindtap="toShow">
+      <view class="content_img">
+        <image src="{{item.src}}" class="contentImg_img"></image>
+        <text class="content_title">{{item.title}}</text>
+      </view>
+      <view class="content_msg">
+        <text class="content_from">来自：{{item.author}} 丨 {{item.num}}人已购买</text>
+      </view>
+    </view>
+  </view>
+ </view>
+</view>

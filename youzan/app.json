@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/page/index/index",
+    "pages/page/detail/detail",
+    "pages/page/order/order",
+    "pages/page/pay/pay",
+    "pages/page/info/info",
+    "pages/page/myOrder/myOrder",
+    "pages/page/finish/finish"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "波奇商城",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#f2474d",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/page/index/index",
+      "iconPath": "pages/img/find.png",
+      "selectedIconPath": "pages/img/findsel.png",
+      "text": "发现"
+    }, {
+      "pagePath": "pages/page/myOrder/myOrder",
+      "iconPath": "pages/img/order.png",
+      "selectedIconPath": "pages/img/ordersel.png",
+      "text": "订单"
+    },{
+      "pagePath": "pages/page/info/info",
+      "iconPath": "pages/img/me.png",
+      "selectedIconPath": "pages/img/mesel.png",
+      "text": "我"
+    }]
+  }
+
+}

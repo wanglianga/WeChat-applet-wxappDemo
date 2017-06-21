@@ -1,0 +1,35 @@
+<!--pages/page/info/info.wxml-->
+<view class="container">
+<!--头像-->
+    <view class="head">
+        <text class="head_title">头像</text>
+        <image src="{{userInfo.avatarUrl}}" class="head_img"></image>
+    </view>
+<!--个人信息-->
+    <view class="center">
+        <view class="center_box">
+            <view class="center_list">
+                <text class="center_title">昵称</text>
+                <text class="center_info">{{userInfo.nickName}}</text>
+            </view>
+             <view class="center_list">
+                <text class="center_title">性别</text>
+                <text class="center_info">{{userInfo.gender}}</text>
+            </view>
+             <view class="center_list">
+                <text class="center_title">我的收货地址</text>
+                <text class="center_info">></text>
+            </view>
+        </view>
+    </view>
+<!--联系客服-->
+    <view class="connect">
+        <text class="connect_title title">联系客服</text>
+        <text class="connect_link link">></text>
+    </view>
+<!--帮助中心-->
+    <view class="help">
+        <text class="help_title title">帮助中心</text>
+        <text class="help_link link">></text>
+    </view>
+</view>
